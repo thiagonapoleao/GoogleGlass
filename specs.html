@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Tudo sobre Google Glass</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/> <!-- link da pasta do css-->
+	<link rel="stylesheet" type="text/css" href="css/specs.css">
+</head>
+<script language="javascript" src="javascript/funcoes.js"></script>  <!-- link da pasta do javascript-->
+<body>
+	<div id="interface">
+	<header id="cabecalho">	
+	<hgroup>
+	<h1>Google Glass</h1>
+	<h2>A revolução do Google está chegando</h2>
+	</hgroup>
+
+	<img id="icone" src="imagens/especificacoes.png">
+	<nav id="menu">
+	<!--<h1>Menu Principal</h1>-->
+	<ul type="disc">
+		<!--  onmouseover"mudafoto" é para mudar a foto ao passar o mouse -->
+		<!--  onmouseout"mudafoto" é para voltar a foto padrão após retirar o mouse -->
+		<li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="index.html">Home</a></li>
+		<li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+		<li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="fotos.html">Fotos</a></li>
+		<li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="multimidia.html">Multimídia</a></li>
+		<li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+</ul>
+</nav>
+</header>
+<section id="corpo-full">
+	<article id="noticia-principal">	
+		<header id="cabecalho-artigo">
+			<hgroup>
+				<h3>Glass > Especificações</h3>
+				<h1>Raio-X no Google Glass</h1>
+				<h2>por Thiago Napoleão</h2>
+				<h3 class="canto-direito">Atualizado em 29/Setembro/2018</h3>
+			</hgroup>
+		</header>
+			<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+			<section id="conteudo">
+				<img src="imagens/glass-esquema-marcado.jpg" usemap="#meumapa">
+				<map name="meumapa"> <!-- mapea uma area da imagem para abrir  -->
+					<area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela"/> <!-- tag<ahapwe"rect"> area retangular <coords"">cordenadas da passição seleciona na imagem -->
+					<area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela"/><!-- tag<shape"circle"> area retangular <coords"">cordenadas da passição seleciona na imagem -->
+					<area shape="circle" coords="73,52,12" href="google-glass.html#gadgets" target="janela"/><!-- tag<shape"circle"> area retangular <coords"">cordenadas da passição seleciona na imagem -->
+					<area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela"/><!-- tag<shape"poly"> area poligonal -- pega mais que 2 cordenadas exp: 4 codernadas <coords"">cordenadas da passição seleciona na imagem -->-->
+				</map>
+				<!-- scrolling="no" é para não aparecer a barra de rolagem (não foi usado no curso, improvisei pois a função do curso não funcionou)-->
+				<iframe scrolling="no" src="google-glass.html" name="janela" id="frame-spec" ></iframe>
+			</section>
+	</article>
+</section>
+
+<footer id="rodape"> <!-- tag <footer> roda pé da pagina>-->
+<p>Copyright &copy; 2018 - by Thiago Napoleão  <br>
+<a href="http://Facebook.com/thiagonapoleao" target="_blank">Facebook </a>| <!-- tag <a href""> link da pagina>  tag <target="_blank"> uma nova pagina-->
+<a href="http://Twitter.com/cursosemvideo" target="_blank"> Twitter</a></p>
+</footer>
+</div>
+</body>
+<html>

@@ -1,0 +1,120 @@
+@charset"UTF-8";
+/*@import url(https://fonts.googleapis.com/css?family=Titillium+Web);*/ /* (fonts public) criando a font importadas direto do google.com/fonts  */
+@font-face { /* criando a font no proprio css - não precisa existir a font no computador do usuario  */
+	font-family: 'FonteLogo';
+	src: url("../fonts/bubblegum-sans-regular.otf");
+}
+body{
+			background-color: #dddddd; /* cor de fundo da pagina */
+			color: rgba(0,0,0,1);
+		}	
+
+		p{
+			text-align: justify;
+			text-indent: 50px;
+		}
+
+header#cabecalho img#icone { /* Formatação de imagens do oculos na pagina */
+	position: absolute;
+	left: 980	px;  
+	top: 70px;
+}	
+header#cabecalho {
+	border-bottom: 1px #606060 solid;  /* Formatação da linha da borda  */
+	height: 150px;  /* Foematação tamanho da borda */
+	background: url("../imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /* Formatação da imagem na borda */
+}
+header#cabecalho h1 {
+	font-family: 'FonteLogo', sans-serif; /* buscando a font no css */
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+header#cabecalho h2 {
+	font-family: 'Titillium Web', sans-serif;
+	color: #888888;
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+
+/* Foematação a interface - colocando tudo dentro de um contener em possicionamento realativo */
+div#interface {
+		width: 900px; /* delemitar o contener na pagina */
+		background-color: #ffffff; /* a cor do contener da pagina */
+		margin: -20px auto 10px auto; /* configuração da margem  externa da pagina sempre na seguencia - cima / direita / baixo / esquerda */
+		box-shadow: 0px 0px 10px rgba(0,0,0,.5); /* a sombra em volta do objeto */
+		padding: 10px 10px 10px 10px; /* configuração da margem  interna da pagina sempre na seguencia - cima / direita / baixo / esquerda */
+}
+
+/* Foematação de imagens com legendas */
+figure.foto-legenda{
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img{
+	width: 100%;
+	height: 100%;
+}
+figure.foto-legenda figcaption{
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s; /* efeito de transição para quando passar o mouse em cima da imagem */
+}
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+
+/* Foematação do menu */
+nav#menu {
+	display: block; /* para meu meu flutui pela tela, precisa que o menu exibido como boloco */
+}
+nav#menu ul {
+	list-style: none; /* retira os caracters da lista não ordenada */
+	text-transform: uppercase; /* Foematação em letra maiuscula */
+	position: absolute; /* possição absoluta da lista pelo site*/
+	top: -20px; /* direcionamento do menu ao top */
+	left: 500px; /* direcionamento do menu ao direita */
+}
+nav#menu li {
+	display: inline-block; /* Foematação a exibição da lista na mesma linha */
+	background-color: #dddddd; /* Foematação a cor do fundo dos itens da lista */
+	padding: 10px; /* espaço entre os itens do texto */
+	margin: 2px; /* margem entre os botons*/
+	transition: background-color 1s; /* efeito de transição para quando passar o mouse em cima do item do menu */
+} 
+nav#menu li:hover {
+	background-color: #606060 /* "hover" efeito para quando eu passar o mause por cima do item do menu */
+}
+nav#menu h1 {
+	display: nome; /* esconder o intem menu principal*/
+}
+nav#menu a { 
+	color: #000000; /* todo link com a cor preta*/
+	text-decoration: none; /* retirar o sublinhado dos links*/
+}
+nav#menu a:hover { /* mudar a cor do link quando passar o mose*/
+	color: #ffffff;
+	text-decoration: underline; /* quando passar o mouse por cima ele sublinha o texto do menu */
+}
+
+section#corpo {
+	display: block;
+	width: 600px;
+}
+aside#lateral {
+	display: block;
+	width: 400px;
+
+}
